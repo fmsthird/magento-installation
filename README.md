@@ -29,5 +29,8 @@ My own version of setting up Magento 2 to local machine.
 8. Run upgrade command
    - ```bin/magento setup:upgrade``` * again when memory limit error comes up just use the above command
   
+9. (Optional) Only for Local development - Disable Multifactor authentication
+   ``` bin/magento disable:module Magento_TwoFactorAuth
+  
 <br/>
  
