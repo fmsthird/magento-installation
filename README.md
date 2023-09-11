@@ -30,7 +30,16 @@ My own version of setting up Magento 2 to local machine.
    - ```bin/magento setup:upgrade``` * again when memory limit error comes up just use the above command
   
 9. (Optional) Only for Local development - Disable Multifactor authentication
-   ```
-   bin/magento disable:module Magento_TwoFactorAuth
-<br/>
+    
+   ```bin/magento disable:module Magento_TwoFactorAuth```
+
+11. (Optional) - when testing the plugin to different PHP versions, you might need to switch PHP versions
+    - Install PHP using brew  
+      ```
+      brew install php@8.2  
+      echo 'export PATH="/opt/homebrew/opt/php@8.1/bin:$PATH"' >> ~/.zshrc  
+      echo 'export PATH="/opt/homebrew/opt/php@8.1/sbin:$PATH"' >> ~/.zshrc
+      ```
+
+
  
